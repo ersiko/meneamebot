@@ -1,5 +1,5 @@
 # meneamebot
-This is the code behind telegram bot [meneamebot](https://telegram.me/meneantebot). Reads from "[meneame](https://www.meneame.net)" digg-like news aggregator's rss and forwards stories to bot subscribers.
+This is the code behind telegram bot [meneamebot](https://telegram.me/meneantebot). Reads from "[meneame](https://www.meneame.net)" digg-like news aggregator's rss and forwards stories to bot subscribers. It also updates already-forwarded stories with new values for number of comments, number of clicks, etc.
 
 It was just a proof of concept of what can be done with telegram bots, and a way of learning about python. Any improvement, correction, suggestion or linting is welcome.
 
