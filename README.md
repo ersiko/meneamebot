@@ -1,5 +1,5 @@
 # meneamebot
-This is the code behind telegram bot [meneamebot](https://telegram.me/bot/meneame_telegram_bot). Reads from "[meneame](https://www.meneame.net)" digg-like news aggregator's rss and forwards stories to bot subscribers.
+This is the code behind telegram bot [meneamebot](https://telegram.me/meneame-telegram-bot). Reads from "[meneame](https://www.meneame.net)" digg-like news aggregator's rss and forwards stories to bot subscribers.
 
 It was just a proof of concept of what can be done with telegram bots, and a way of learning about python. Any improvement, correction, suggestion or linting is welcome.
 
@@ -14,7 +14,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> data['subscribed_users'] = ['first-telegram-id', 'second-telegram-id', ...]
 >>> data.close()
 ```
-Also get a token from [botfather](https://telegram.me/bot/botfather), and use it as an argumen to the script.
+Also get a token from [botfather](https://telegram.me/botfather), and use it as an argumen to the script.
 
 Then you can run it periodically. I use a cron:
 ```
