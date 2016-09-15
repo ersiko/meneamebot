@@ -10,10 +10,19 @@ rss = feedparser.parse("https://www.meneame.net/rss")
 TOKEN = sys.argv[1]
 bot = telepot.Bot(TOKEN)
 data = shelve.open("meneamebot_data", writeback=True)
-# bot.sendMessage("15866663", rss['updated'])
+
+try:
+    sent_messages = data['sent_messages']
+except KeyError:
+    data['sent_messages'] = {}
+
+try:
+    subscribed_users = data['subscribed_users']
+except KeyError:
+    data['subscribed_users'] = []
 
 for entry in rss['entries'][0:24]:
-    message = "[" + entry['title'] + "](" + entry['meneame_url'] + ")\n\n"
+    message = entry['title'] + "[(fuente)]](" + entry['meneame_url'] + ")\n\n"
     message += "*Meneos*: [" + entry['meneame_votes'] + "](https://www.meneame.net/backend/menealo?id=" + entry['meneame_link_id'] + "&user=0)"
     message += ". *Negativos*: " + entry['meneame_negatives']
     message += ". *Clicks*: [" + entry['meneame_clicks'] + "](https://www.meneame.net/go?id=" + entry['meneame_link_id'] + ")"
