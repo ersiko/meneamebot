@@ -12,6 +12,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import shelve
 >>> data = shelve.open("meneamebot_data", writeback=True)
 >>> data['subscribed_users'] = ['first-telegram-id', 'second-telegram-id', ...]
+>>> data['sent_messages']={}
 >>> data.close()
 ```
 Also get a token from [botfather](https://telegram.me/botfather), and use it as an argumen to the script.
