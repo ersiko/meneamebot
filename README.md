@@ -1,7 +1,7 @@
 # meneamebot
-Telegram bot. Reads from "meneame" digg-like news aggregator's rss and forwards stories to bot subscribers
+This is the code behind telegram bot [meneamebot](https://telegram.me/bot/meneame_telegram_bot). Reads from "[meneame](https://www.meneame.net)" digg-like news aggregator's rss and forwards stories to bot subscribers.
 
-It was just a proof of concept of what can be done with telegram bots, and a way of learning about python. Any improvement, correction, linting is welcome.
+It was just a proof of concept of what can be done with telegram bots, and a way of learning about python. Any improvement, correction, suggestion or linting is welcome.
 
 To use it, you just need to add subscribers via python command (I'll may create a bot interface for that, too):
 ```
